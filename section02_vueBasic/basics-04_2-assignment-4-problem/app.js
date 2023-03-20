@@ -5,8 +5,8 @@ const app = Vue.createApp({
             class: '',
             pClass: [],
             isShow: false,
-            colorClass:'',
-            color: ''
+            colorName:'',
+            color44: ''
         }
         
     },
@@ -23,7 +23,7 @@ const app = Vue.createApp({
             this.isShow = !this.isShow
         },
         colorClass() {
-
+            this.color44 = this.colorName
         }
     }
 })
