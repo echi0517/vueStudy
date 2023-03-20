@@ -12,7 +12,16 @@ const app = Vue.createApp({
     },
     computed: {
         isVisible () {
-            return [this.class , {visible: !this.isShow , hidden:this.isShow}]
+            // return [this.class , {visible: !this.isShow , hidden:this.isShow}]
+            return{
+                user1: this.class === 'user1',
+                user2: this.class === 'user2',
+                visible: !this.isShow , 
+                hidden:this.isShow
+            }
+        },
+        backgroundColor() {
+            return {backgroundColor: this.color44}
         }
     },
     methods: {

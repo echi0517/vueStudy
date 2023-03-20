@@ -31,7 +31,7 @@
 
       <!-- 3) Add dynamic inline styling to the below paragraph and let the user enter a background-color -->
       <input type="text" @keyup.enter="colorClass" v-model="colorName"/>
-      <p :class="{backgroundColor:color44}">Style me inline! {{colorName}}</p>
+      <p :style="backgroundColor">Style me inline! {{colorName}}</p>
     </section>
   </body>
 </html>
