@@ -1,0 +1,3 @@
+nodejs 설치후
+
+cmd 에서 npm install -g @vue/cli
